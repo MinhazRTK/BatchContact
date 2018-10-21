@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">BatchContact</string>
-    <string name="title_activity_main2">Splash</string>
+    <string name="app_name">My Contacts</string>
 </resources>
