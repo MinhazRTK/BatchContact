@@ -13,21 +13,20 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Adapter extends ArrayAdapter<Contacts> {
 
     Context mCtx;
     int listLayoutRes;
-    List<Contacts> contactsList;
-    SQLiteDatabase mDatabase;
+    ArrayList<Contacts> contactsList;
 
-    public Adapter(Context context, int resource, List<Contacts> contactsList, SQLiteDatabase mDatabase) {
+    public Adapter(Context context, int resource, ArrayList<Contacts> contactsList) {
         super(context, resource);
         this.mCtx = mCtx;
         this.listLayoutRes = listLayoutRes;
         this.contactsList = contactsList;
-        this.mDatabase = mDatabase;
     }
 
     @NonNull
@@ -57,5 +56,6 @@ public class Adapter extends ArrayAdapter<Contacts> {
 
         return view;
     }
+
 
 }
