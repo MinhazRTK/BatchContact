@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     android:gravity="center"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".AddContacts">
 
 
@@ -13,50 +15,79 @@
         android:id="@+id/entryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:layout_weight="1"
+        android:background="@drawable/btn_rounded"
         android:ems="10"
         android:hint="Enter Name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24dp"
+        android:typeface="monospace" />
 
     <EditText
         android:id="@+id/entryPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_weight="1"
+        android:background="@drawable/btn_rounded"
         android:ems="10"
         android:hint="Enter Phone Number"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24dp"
+        android:typeface="monospace" />
 
     <EditText
         android:id="@+id/entryEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:background="@drawable/btn_rounded"
         android:ems="10"
         android:hint="Enter E-Mail Address"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24dp"
+        android:typeface="monospace" />
 
     <EditText
         android:id="@+id/entryAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_weight="1"
+        android:background="@drawable/btn_rounded"
         android:ems="10"
         android:hint="Enter Postal Address"
-        android:inputType="textPostalAddress" />
-
-    <ImageView
-        android:id="@+id/uploadImg"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/minhaz" />
+        android:inputType="textPostalAddress"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24dp"
+        android:typeface="monospace" />
 
     <Button
-        android:id="@+id/save"
-        android:layout_width="match_parent"
+        android:id="@+id/btnSave"
+        android:layout_width="207dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"
         android:layout_weight="1"
-        android:text="Save" />
+        android:background="@drawable/btn_rounded"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
 
 </LinearLayout>

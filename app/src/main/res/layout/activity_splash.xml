@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
-    tools:context=".SplashActivity">
+    android:background="@drawable/background_gradient"
+    tools:context=".Splash">
 
     <ImageView
         android:id="@+id/google_logo"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/google"
+        android:src="@drawable/ic_perm_contact_calendar_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

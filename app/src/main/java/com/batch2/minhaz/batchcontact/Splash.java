@@ -20,6 +20,8 @@ public class Splash extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash);
 
+        (new DBManager(this)).CopyDB();
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -31,7 +33,7 @@ public class Splash extends AppCompatActivity {
             }
         }, SPLASH_TIME_OUT);
 
-        (new DBManager(this)).CopyDB();
+
     }
 }
 

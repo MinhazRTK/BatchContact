@@ -6,14 +6,12 @@ public class Contacts {
     int id;
     String name, phone, email, address, website, img;
 
-    public Contacts(int id, String name, String phone, String email, String address, String website, String img) {
+    public Contacts(int id, String name, String phone, String email, String address) {
         this.id = id;
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.address = address;
-        this.website = website;
-        this.img = img;
     }
 
 
@@ -37,11 +35,4 @@ public class Contacts {
         return address;
     }
 
-    public String getWebsite() {
-        return website;
-    }
-
-    public String getImg() {
-        return img;
-    }
 }
