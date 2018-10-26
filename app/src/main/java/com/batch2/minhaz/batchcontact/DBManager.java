@@ -44,6 +44,8 @@ public class DBManager extends SQLiteOpenHelper {
     }
 
 
+    //need comments
+
     public void OpenDatabase() {
         String dbPath = DBLOCATION + DBNAME;
         if (mDatabase != null && mDatabase.isOpen()) {
